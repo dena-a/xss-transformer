@@ -8,11 +8,12 @@ a PHP and Laravel package to transform strings to prevent xss injection
 [![License](https://poser.pugx.org/dena-a/xss-transformer/license)](https://packagist.org/packages/dena-a/xss-transformer)
 
 ## Requirements
-asdasd
+
 * PHP >= 7.4
 
 ## Installation
-1. Add the package to your composer file via the `composer require` command:
+
+Add the package to your composer file via the `composer require` command:
    
    ```bash
    $ composer require dena-a/xss-transformer:^0.1
@@ -26,7 +27,9 @@ asdasd
    }
    ```
 
-2. XssTransformer's service providers will be automatically registered using Laravel's auto-discovery feature.
+### Laravel\Lumen
+
+1. XssTransformer's service providers will be automatically registered using Laravel's auto-discovery feature.
 
     > Note: For Lumen you have to add the XssTransformer service provider manually to: `bootstrap/app.php` :
 
@@ -34,12 +37,13 @@ asdasd
    $app->register(Dena\XssTransformer\Laravel\XssTransformerServiceProvider::class);
     ```
 
-3. Publish the config-file with:
+2. Publish the config-file with:
     ```bash
     php artisan vendor:publish --provider="Dena\XssTransformer\Laravel\XssTransformerServiceProvider"
     ```
 
 ## Usage
+
 TODO:
 
 ## Contribute
